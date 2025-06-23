@@ -13,7 +13,7 @@ function appendMessage(sender, text) {
   chatWindow.scrollTop = chatWindow.scrollHeight;
 }
 
-sendButton.addEventListener('click', async () => {
+async function handleSend() {
   const input = userInput.value.trim();
   if (!input) return;
 
@@ -43,5 +43,16 @@ sendButton.addEventListener('click', async () => {
   } catch (err) {
     console.error(err);
     appendMessage("챗봇", "오류가 발생했습니다. API 키 또는 네트워크를 확인해주세요.");
+  }
+}
+
+// 버튼 클릭 시 전송
+sendButton.addEventListener('click', handleSend);
+
+// 엔터 키 입력 시 전송
+userInput.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter' || event.keyCode === 13) {
+    event.preventDefault(); // form 전송 방지
+    handleSend();
   }
 });
