@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica", sans-serif;
+    background-color: #e1f5e6; /* 파스텔톤 연초록 배경 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  button {
+    padding: 1em 2em;
+    font-size: 1.2rem;
+    background-color: #b2dfdb; /* 파스텔톤 민트그린 */
+    border: none;
+    border-radius: 10px;
+    color: #004d40;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #80cbc4; /* 진한 파스텔 민트 */
+  }
+  
