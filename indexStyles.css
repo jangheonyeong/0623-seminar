@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Helvetica", sans-serif;
-    background-color: #e1f5e6; /* 파스텔톤 연초록 배경 */
+    background-color: #e1f5e6; /* 파스텔 연초록 배경 */
     display: flex;
     justify-content: center;
     align-items: center;
